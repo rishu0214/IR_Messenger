@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1011408885375",
+    "project_id": "ir-messenger",
+    "storage_bucket": "ir-messenger.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1011408885375:android:fb71ab9ef7f9d9eeb8d14a",
+        "android_client_info": {
+          "package_name": "com.message.ir_messenger"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdB0E3pXzdYFjGT5RqXvWU6dqVDxfWkqM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

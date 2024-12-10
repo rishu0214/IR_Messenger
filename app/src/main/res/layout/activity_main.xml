@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainback"
+    tools:context=".MainActivity">
+
+  <!-- LinearLayout at the top -->
+
+  <!-- RecyclerView below the LinearLayout -->
+
+  <LinearLayout
+      android:id="@+id/mainll"
+      android:layout_width="wrap_content"
+      android:layout_height="@dimen/_50sdp"
+      android:layout_marginTop="16dp"
+      android:background="@color/white"
+      android:gravity="center"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.492"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:ignore="MissingConstraints">
+
+    <TextView
+        android:id="@+id/maintxtIRM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/afacad_regular"
+        android:text="@string/app_name"
+        android:textSize="@dimen/_25sdp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/mainimgEx"
+        android:layout_width="@dimen/_38sdp"
+        android:layout_height="@dimen/_38sdp"
+        android:layout_marginLeft="@dimen/_32sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:background="@drawable/logout" />
+  </LinearLayout>
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/mainRV"
+      android:layout_width="369dp"
+      android:layout_height="370dp"
+      android:layout_margin="16dp"
+      app:layout_constraintBottom_toTopOf="@+id/mainimgCa"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/mainll"
+      app:layout_constraintVertical_bias="0.895" />
+
+  <!-- First ImageView at the bottom -->
+
+  <!-- Second ImageView at the bottom -->
+
+  <!-- Third ImageView at the bottom -->
+
+  <ImageView
+      android:id="@+id/mainimgCa"
+      android:layout_width="40dp"
+      android:layout_height="40dp"
+      android:layout_marginBottom="40dp"
+      android:src="@drawable/camera"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.274"
+      app:layout_constraintHorizontal_chainStyle="spread_inside"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <ImageView
+      android:id="@+id/mainimgCh"
+      android:layout_width="40dp"
+      android:layout_height="40dp"
+      android:layout_marginBottom="40dp"
+      android:src="@drawable/chat"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toStartOf="@id/mainimgSe"
+      app:layout_constraintHorizontal_bias="0.536"
+      app:layout_constraintStart_toEndOf="@id/mainimgCa" />
+
+  <ImageView
+      android:id="@+id/mainimgSe"
+      android:layout_width="40dp"
+      android:layout_height="40dp"
+      android:layout_marginBottom="40dp"
+      android:src="@drawable/sett"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.727"
+      app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
